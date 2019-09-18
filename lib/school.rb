@@ -24,32 +24,8 @@ class School
     end 
 
     def sort
-        @roster.each_value do |value| 
+        @roster.each do |grade, value| 
             @roster[grade] = value.sort
         end
     end
 end
-
-# require 'pry'
-
-# class School
-#     attr_accessor :roster
-#     def initialize(new_school)
-#         @new_school = new_school
-#         @roster = {}
-#     end
-
-#     def add_student(new_student, grade)
-#         @roster[grade] ||= []
-#         @roster[grade] << new_student 
-#     end
-
-#     def grade(grade)
-#         @roster[grade]
-#     end 
-
-#     def sort
-#         @roster[grade].each_value {|name| name.sort} 
-    
-#     end
-# end
