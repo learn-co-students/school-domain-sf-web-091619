@@ -1,3 +1,4 @@
+require 'pry'
 class School
     def initialize(name)
         @name = name
@@ -22,5 +23,6 @@ class School
 
     def sort
         roster.each_value { |info| info.sort! }
+        
     end
 end
